@@ -4,5 +4,7 @@ project(LiFM_Data)
 set(CMAKE_CXX_STANDARD 20)
 
 add_library(LiFM_Data STATIC
-        LiFMDataHandler.cpp
-        LiFMDataHandler.h)
+        LiFMDataHandler.cpp)
+
+
+target_include_directories(LiFM_Data PUBLIC include)
