@@ -8,9 +8,8 @@
 
 struct Club
 {
-  std::vector<int> playerIDs;
   int leagueID;
-  int moneyAmount;
+  std::vector<int> playerIDs;
 };
 
 #endif //CLUB_H
