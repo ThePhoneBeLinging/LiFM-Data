@@ -4,17 +4,17 @@
 
 #include "LiFM-Data/LiFMDataHandler.h"
 
-League* LiFMDataHandler::getLeague(int id)
+League* LiFMDataHandler::getLeague(const int id)
 {
   return &leagues_[id];
 }
 
-Club* LiFMDataHandler::getClub(int id)
+Club* LiFMDataHandler::getClub(const int id)
 {
   return &clubs_[id];
 }
 
-Player* LiFMDataHandler::getPlayer(int id)
+Player* LiFMDataHandler::getPlayer(const int id)
 {
   return &players_[id];
 }
