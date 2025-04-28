@@ -9,6 +9,7 @@
 struct Club
 {
   int leagueID;
+  int clubID;
   std::vector<int> playerIDs;
 };
 

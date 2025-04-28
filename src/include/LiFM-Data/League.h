@@ -8,7 +8,7 @@
 
 struct League
 {
-  int leagueID;
+  size_t leagueID;
   std::vector<int> clubs;
 };
 

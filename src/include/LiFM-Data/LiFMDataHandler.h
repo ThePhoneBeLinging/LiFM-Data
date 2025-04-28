@@ -18,6 +18,10 @@ public:
   League* getLeague(int id);
   Club* getClub(int id);
   Player* getPlayer(int id);
+
+  League* createLeague();
+  Club* createClub();
+  Player* createPlayer();
 private:
   std::vector<League> leagues_;
   std::vector<Club> clubs_;

@@ -18,3 +18,24 @@ Player* LiFMDataHandler::getPlayer(const int id)
 {
   return &players_[id];
 }
+
+League* LiFMDataHandler::createLeague()
+{
+  leagues_.emplace_back();
+  leagues_.back().leagueID = leagues_.size() - 1;
+  return &leagues_.back();
+}
+
+Club* LiFMDataHandler::createClub()
+{
+  clubs_.emplace_back();
+  clubs_.back().clubID = clubs_.size() - 1;
+  return &clubs_.back();
+}
+
+Player* LiFMDataHandler::createPlayer()
+{
+  players_.emplace_back();
+  players_.back().playerID = players_.size() - 1;
+  return &players_.back();
+}
